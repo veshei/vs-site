@@ -15,7 +15,7 @@ module.exports = {
       options: {
         src: path.join(__dirname, "src"),
         pages: path.join(__dirname, "src/pages"),
-        fonts: path.json(__dirname, "src/fonts"),
+        fonts: path.join(__dirname, "src/fonts"),
       },
     },
   ],
