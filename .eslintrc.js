@@ -4,7 +4,13 @@ module.exports = {
     es2020: true,
     node: true,
   },
-  extends: ["plugin:react/recommended", "airbnb", "prettier", "prettier/react"],
+  extends: [
+    "plugin:react/recommended",
+    "airbnb",
+    "prettier",
+    "prettier/react",
+    "plugin:jsx-a11y/recommended",
+  ],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -12,7 +18,7 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: "module",
   },
-  plugins: ["react", "prettier"],
+  plugins: ["react", "prettier", "jsx-a11y"],
   rules: {
     "prettier/prettier": [
       "error",
