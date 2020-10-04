@@ -53,6 +53,7 @@ module.exports = {
       alias: [
         ["~components", "./src/components"],
         ["~fonts", "./src/fonts"],
+        ["~icons", "./src/components/icons"],
         ["~pages", "./src/pages"],
         ["~styles", "./src/styles"],
       ],
