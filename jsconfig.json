@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      //Assuming your components/utilities live in ./src
+      //Update this path as necessary
+      "~components/*": ["./src/components/*"],
+      "~fonts/*": ["./src/fonts/*"],
+      "~pages/*": ["./src/pages/*"],
+      "~styles/*": ["./src/styles/*"]
+    }
+  },
+  //Add any build/compiled folders here to stop vscode searching those
+  "exclude": ["node_modules", "build"]
+}

@@ -45,4 +45,17 @@ module.exports = {
       },
     ],
   },
+  settings: {
+    "import/resolver": {
+      node: {
+        paths: ["./", "./src"],
+      },
+      alias: [
+        ["~components", "./src/components"],
+        ["~fonts", "./src/fonts"],
+        ["~pages", "./src/pages"],
+        ["~styles", "./src/styles"],
+      ],
+    },
+  },
 }
