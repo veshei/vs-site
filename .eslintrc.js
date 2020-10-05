@@ -55,6 +55,7 @@ module.exports = {
         ["~fonts", "./src/fonts"],
         ["~icons", "./src/components/icons"],
         ["~pages", "./src/pages"],
+        ["~sections", "./src/components/sections"],
         ["~styles", "./src/styles"],
       ],
     },
