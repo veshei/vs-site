@@ -21,7 +21,7 @@ const GlobalStyle = createGlobalStyle`
         --fz-xl: 28px;
         --fz-xxl: 36px;
         --fz-heading: 48px;
-  }
+    }
 
     html {
         box-sizing: border-box;
@@ -49,8 +49,48 @@ const GlobalStyle = createGlobalStyle`
         min-height: 100vh;
         width: 100vw;
         display: grid;
-        grid-template-columns: repeat(12, [col-start] 1fr);
+        grid-template-rows: 4.5rem 1fr 4.5rem;
         grid-gap: 20px;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    }
+    
+    h1 {
+        font-size: var(--fz-heading);
+        font-weight: var(700);
+        letter-spacing: 0;
+        line-height: 56px;
+    }
+    h2 {
+        font-size: var(--fz-xxl)
+        letter-spacing: 0;
+        line-height: 42px;
+    }   
+    h3 {
+        font-size: var(--fz-xl)
+        letter-spacing: 0;
+        line-height: 33px;
+    }    
+    h4 {
+        font-size: var(--fz-lg)
+        letter-spacing: 0;
+        line-height: 29px;
+    }    
+    h5 {
+        font-size: var(--fz-md)
+        letter-spacing: 0;
+        line-height: 24px;
+    }    
+    h6 {
+        font-size: var(--fz-sm)
+        letter-spacing: 0;
+        line-height: 22px;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        margin: 0;
+        padding: 0.5rem 0 0.5rem 0;
     }
 `
 

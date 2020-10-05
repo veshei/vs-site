@@ -3,13 +3,14 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 
 import WhiteLogo from "~components/icons/whiteLogo"
+import Button from "~components/button"
 
 const StyledHeader = styled.header`
-  grid-column: span 12;
+  grid-area: header;
   display: flex;
   grid-template-columns: repeat(12, [col-start] 1fr);
-  grid-gap: 20px;
-  height: 72px;
+  grid-gap: 2.25rem;
+  height: 4.5rem;
   background-color: var(--black);
   align-items: center;
 `
@@ -33,7 +34,10 @@ const LinksWrapper = styled.div`
   }
 
   .links--wrapper {
+    display: flex;
+    justify-content: space-evenly;
     margin-right: 2.25rem;
+    width: 35rem;
   }
 `
 
@@ -63,6 +67,7 @@ const Nav = () => {
           <StyledLink to="/experience">Experience</StyledLink>
           <StyledLink to="/work">Work</StyledLink>
           <StyledLink to="/contact">Contact</StyledLink>
+          <Button href="/resume.pdf">Resume</Button>
         </div>
       </LinksWrapper>
     </StyledHeader>
