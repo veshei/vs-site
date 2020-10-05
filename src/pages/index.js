@@ -44,7 +44,6 @@ const Introduction3 = styled.h3`
 const Introduction4 = styled.h6`
   color: var(--grey);
   font-weight: 400;
-  width: 50%;
 `
 
 const ContactButton = styled(Button)`
