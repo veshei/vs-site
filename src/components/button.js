@@ -17,13 +17,21 @@ const ButtonContainer = styled.a`
   text-decoration: none;
 `
 
-const Button = ({ children, href }) => {
-  return <ButtonContainer href={href}>{children}</ButtonContainer>
+const Button = ({ className, children, href }) => {
+  return (
+    <ButtonContainer className={className} href={href}>
+      {children}
+    </ButtonContainer>
+  )
 }
 
 Button.propTypes = {
   children: PropTypes.node.isRequired,
-  href: PropTypes.func.isRequired,
+  href: PropTypes.string.isRequired,
+  className: PropTypes.string,
 }
 
+Button.defaultProps = {
+  className: "button",
+}
 export default Button
