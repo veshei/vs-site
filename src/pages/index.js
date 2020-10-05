@@ -1,8 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-import Layout from "~components/layout"
-import Button from "~components/button"
+import { Layout, Button } from "~components/"
 import { email } from "../config"
 
 const MainContainer = styled.div`

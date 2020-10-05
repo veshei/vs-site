@@ -49,11 +49,12 @@ const GlobalStyle = createGlobalStyle`
         min-height: 100vh;
         width: 100vw;
         display: grid;
-        grid-template-rows: 4.5rem 1fr 4.5rem;
+        grid-template-rows: 4.5rem 1fr 3rem 4.5rem;
         grid-gap: 20px;
         grid-template-areas:
         "header"
         "main"
+        "social"
         "footer";
     }
     

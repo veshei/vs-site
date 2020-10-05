@@ -4,7 +4,7 @@ module.exports = {
   socialMedia: [
     {
       name: "Gmail",
-      url: "veronicacshei@gmail.com",
+      url: "mailto:veroniicacshei@gmail.com",
     },
     {
       name: "Linkedin",
