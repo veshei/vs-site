@@ -19,6 +19,7 @@
     "gatsby-cli": "^2.12.102",
     "gatsby-plugin-react-helmet": "^3.3.12",
     "gatsby-plugin-styled-components": "^3.3.12",
+    "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
