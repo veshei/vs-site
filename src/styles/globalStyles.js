@@ -64,27 +64,27 @@ const GlobalStyle = createGlobalStyle`
         line-height: 56px;
     }
     h2 {
-        font-size: var(--fz-xxl)
+        font-size: var(--fz-xxl);
         letter-spacing: 0;
         line-height: 42px;
     }   
     h3 {
-        font-size: var(--fz-xl)
+        font-size: var(--fz-xl);
         letter-spacing: 0;
         line-height: 33px;
     }    
     h4 {
-        font-size: var(--fz-lg)
+        font-size: var(--fz-lg);
         letter-spacing: 0;
         line-height: 29px;
     }    
     h5 {
-        font-size: var(--fz-md)
+        font-size: var(--fz-md);
         letter-spacing: 0;
         line-height: 24px;
     }    
     h6 {
-        font-size: var(--fz-sm)
+        font-size: var(--fz-sm);
         letter-spacing: 0;
         line-height: 22px;
     }
