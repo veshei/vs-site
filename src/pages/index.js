@@ -7,29 +7,26 @@ import { email } from "../config"
 
 const MainContainer = styled.div`
   grid-area: main;
-  display: flex;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "image content";
   width: 100%;
   height: 100%;
 `
 
 const ImageContainer = styled.div`
   grid-area: image;
-  width: 50%;
 `
 const HeadingContainer = styled.div`
   grid-area: content;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
 `
 
 const IntroductionContainer = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  grid-column: 2 / 3;
 `
 const Introduction1 = styled.h6`
   color: var(--grey);
@@ -40,7 +37,7 @@ const Introduction2 = styled.h1`
   font-weight: 700;
 `
 
-const Introduction3 = styled.h5`
+const Introduction3 = styled.h3`
   color: var(--red);
   font-weight: 700;
   color: rgba(168, 0, 0, 0.5);
@@ -49,6 +46,10 @@ const Introduction4 = styled.h6`
   color: var(--grey);
   font-weight: 400;
   width: 50%;
+`
+
+const ContactButton = styled(Button)`
+  margin-top: 1rem;
 `
 
 const IndexPage = () => {
@@ -69,7 +70,12 @@ const IndexPage = () => {
               responsive applications and leveraging data science to drive
               better user experiences.
             </Introduction4>
-            <Button href={`mailto:${email}`}>Contact Me</Button>
+            <ContactButton
+              className="contact-me--button"
+              href={`mailto:${email}`}
+            >
+              Contact Me
+            </ContactButton>
           </IntroductionContainer>
         </HeadingContainer>
       </MainContainer>
