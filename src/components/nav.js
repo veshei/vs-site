@@ -4,6 +4,7 @@ import styled from "styled-components"
 
 import WhiteLogo from "~components/icons/whiteLogo"
 import Button from "~components/button"
+import { navLinks } from "../config"
 
 const StyledHeader = styled.header`
   grid-area: header;
@@ -35,9 +36,9 @@ const LinksWrapper = styled.div`
 
   .links--wrapper {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-right: 2.25rem;
-    width: 35rem;
+    width: 30%;
   }
 `
 
@@ -63,10 +64,9 @@ const Nav = () => {
           <StyledLink to="/">Veronica Shei</StyledLink>
         </div>
         <div className="links--wrapper">
-          <StyledLink to="/about">About</StyledLink>
-          <StyledLink to="/experience">Experience</StyledLink>
-          <StyledLink to="/work">Work</StyledLink>
-          <StyledLink to="/contact">Contact</StyledLink>
+          {navLinks.map(({ url, name }) => (
+            <StyledLink to={url}>{name}</StyledLink>
+          ))}
           <Button href="/resume.pdf">Resume</Button>
         </div>
       </LinksWrapper>
