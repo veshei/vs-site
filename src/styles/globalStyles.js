@@ -8,6 +8,7 @@ const GlobalStyle = createGlobalStyle`
         --black: #000000;
         --red: #8F1D14;
         --red-dark: #9B0505;
+        --red-light: #A80000;
         --red-bg: rgba(155,5,5,0.3);
         --red-border: #B70000;
         --grey: #949494;
@@ -49,17 +50,18 @@ const GlobalStyle = createGlobalStyle`
         min-height: 100vh;
         width: 100vw;
         display: grid;
-        grid-template-rows: 4.5rem 1fr 3rem 4.5rem;
+        grid-template-rows: 4.5rem 1fr 1rem 3rem 4.5rem;
         grid-template-areas:
         "header"
         "main"
+        "gap"
         "social"
         "footer";
     }
     
     h1 {
         font-size: var(--fz-heading);
-        font-weight: var(700);
+        font-weight: 700;
         letter-spacing: 0;
         line-height: 56px;
     }
