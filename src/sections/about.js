@@ -61,7 +61,7 @@ const BulletPointRow = styled.div`
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "bullet1 bullet2";
-  width: 436px;
+  width: 568px;
   margin-bottom: 1rem;
 `
 
