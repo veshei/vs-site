@@ -6,7 +6,7 @@ import HomeImage from "~components/homeImage"
 import { email } from "../config"
 
 const HomeContainer = styled.div`
-  grid-area: main;
+  grid-area: home;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
