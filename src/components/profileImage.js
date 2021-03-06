@@ -7,11 +7,13 @@ const ImageContainer = styled.div`
   grid-area: image;
   height: 100%;
   width: 100%;
+  display: flex;
+  justify-content: center;
 `
 
 const StyledImg = styled(Img)`
-  height: 100%;
-  width: 100%;
+  height: 75%;
+  width: 75%;
 `
 
 const ProfileImage = () => {
