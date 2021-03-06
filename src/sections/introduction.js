@@ -19,11 +19,12 @@ const HeadingContainer = styled.div`
   grid-area: content;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
+  grid-template-areas: "padding1 text padding2";
   align-items: center;
 `
 
 const IntroductionContainer = styled.div`
-  grid-column: 2 / 3;
+  grid-area: text;
 `
 const Introduction1 = styled.h6`
   color: var(--grey);
@@ -34,8 +35,7 @@ const Introduction2 = styled.h1`
   font-weight: 700;
 `
 
-const Introduction3 = styled.h3`
-  color: var(--red);
+const Introduction3 = styled.h4`
   font-weight: 700;
   color: rgba(168, 0, 0, 0.5);
 `
