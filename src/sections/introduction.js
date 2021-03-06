@@ -1,7 +1,19 @@
 import React from "react"
 import styled from "styled-components"
 import { Button } from "~components/"
+import HomeImage from "~components/homeImage"
+
 import { email } from "../config"
+
+const HomeContainer = styled.div`
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "image content";
+  width: 100%;
+  height: 100%;
+`
 
 const HeadingContainer = styled.div`
   grid-area: content;
@@ -37,22 +49,25 @@ const ContactButton = styled(Button)`
 `
 
 const Introduction = () => (
-  <HeadingContainer>
-    <IntroductionContainer>
-      <Introduction1>Hello I&apos;m</Introduction1>
-      <Introduction2>Veronica Shei</Introduction2>
-      <Introduction3>I design and develop web applications.</Introduction3>
-      <Introduction4>
-        I&apos;m a full stack software developer in the financial technology
-        space. I&apos;m passionate about crafting elegant and responsive
-        applications and leveraging data science to drive better user
-        experiences.
-      </Introduction4>
-      <ContactButton className="contact-me--button" href={`mailto:${email}`}>
-        Contact Me
-      </ContactButton>
-    </IntroductionContainer>
-  </HeadingContainer>
+  <HomeContainer>
+    <HomeImage />
+    <HeadingContainer>
+      <IntroductionContainer>
+        <Introduction1>Hello I&apos;m</Introduction1>
+        <Introduction2>Veronica Shei</Introduction2>
+        <Introduction3>I design and develop web applications.</Introduction3>
+        <Introduction4>
+          I&apos;m a full stack software developer in the financial technology
+          space. I&apos;m passionate about crafting elegant and responsive
+          applications and leveraging data science to drive better user
+          experiences.
+        </Introduction4>
+        <ContactButton className="contact-me--button" href={`mailto:${email}`}>
+          Contact Me
+        </ContactButton>
+      </IntroductionContainer>
+    </HeadingContainer>
+  </HomeContainer>
 )
 
 export default Introduction
