@@ -2,8 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 
 import GlobalStyle from "~styles/globalStyles"
-import Nav from "./nav"
-import Footer from "./footer"
+import { Nav, Footer, Social } from "~components/"
 
 const Layout = ({ children }) => {
   return (
@@ -11,6 +10,7 @@ const Layout = ({ children }) => {
       <GlobalStyle />
       <Nav />
       <main> {children} </main>
+      <Social />
       <Footer />
     </div>
   )
