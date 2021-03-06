@@ -3,8 +3,7 @@ import styled from "styled-components"
 
 const StyledFooter = styled.footer`
   grid-area: footer;
-  position: absolute;
-  bottom: 0;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
