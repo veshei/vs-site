@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+// import { useStaticQuery, graphql } from "gatsby"
 
 const WorkContainer = styled.div`
   display: grid;
@@ -33,6 +34,27 @@ const WorkDivider = styled.div`
 `
 
 const Work = () => {
+  /*   const data = useStaticQuery(graphql`
+    query {
+      jobs: allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/jobs/" } }
+        sort: { fields: [frontmatter___date], order: DESC }
+      ) {
+        edges {
+          node {
+            frontmatter {
+              title
+              company
+              location
+              range
+              url
+            }
+            html
+          }
+        }
+      }
+    }
+  `) */
   return (
     <WorkContainer>
       <TitleContainer>
