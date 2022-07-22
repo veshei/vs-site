@@ -6,11 +6,20 @@ import HomeImage from "~components/homeImage"
 import { email } from "../config"
 
 const HomeContainer = styled.div`
+  @media screen and (max-width: 900px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 500px 500px;
+    grid-template-areas:
+      "image"
+      "content";
+  }
+  @media screen and (min-width: 900px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "image content";
+  }
   grid-area: home;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "image content";
   width: 100%;
   height: 100%;
 `
@@ -57,10 +66,10 @@ const Introduction = () => (
         <Introduction2>Veronica Shei</Introduction2>
         <Introduction3>I design and develop web applications.</Introduction3>
         <Introduction4>
-          I&apos;m a full stack software developer in the financial technology
-          space. I&apos;m passionate about crafting elegant and responsive
-          applications and leveraging data science to drive better user
-          experiences.
+          I&apos;m a front end software developer working at an early stage
+          startup in the consumer healthcare space. I&apos;m passionate about
+          crafting elegant and responsive applications and leveraging data
+          science to drive better user experiences.
         </Introduction4>
         <ContactButton className="contact-me--button" href={`mailto:${email}`}>
           Contact Me

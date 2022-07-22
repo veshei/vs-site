@@ -36,9 +36,11 @@ const LinksWrapper = styled.div`
 
   .links--wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-right: 2.25rem;
-    width: 30%;
+    @media screen and (min-width: 1200px) {
+      width: 15%;
+    }
   }
 `
 
@@ -67,7 +69,7 @@ const Nav = () => {
           {navLinks.map(({ url, name }) => (
             <StyledLink to={url}>{name}</StyledLink>
           ))}
-          <Button href="/resume.pdf">Resume</Button>
+          <Button href="resume.pdf">Resume</Button>
         </div>
       </LinksWrapper>
     </StyledHeader>

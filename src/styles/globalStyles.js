@@ -16,6 +16,7 @@ const GlobalStyle = createGlobalStyle`
         --font-sans: 'Raleway', 'San Francisco', 'SF Pro Text', -apple-system, system-ui, sans-serif;
         --font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
 
+        --fz-xs: 12px;
         --fz-sm: 18px;
         --fz-md: 20px;
         --fz-lg: 24px;
@@ -50,7 +51,7 @@ const GlobalStyle = createGlobalStyle`
         min-height: 100vh;
         width: 100vw;
         display: grid;
-        grid-template-rows: 4.5rem 1fr 1rem 3rem 4.5rem;
+        grid-template-rows: 4.5rem 1fr 1rem 5rem 4.5rem;
         grid-template-areas:
         "header"
         "main"
