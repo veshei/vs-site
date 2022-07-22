@@ -11,8 +11,13 @@ const SunnysideContainer = styled.div`
 `
 const SectionContainer = styled.div`
   display: flex;
-  flex-direction: row;
   width: 100%;
+  @media screen and (max-width: 900px) {
+    flex-direction: column-reverse;
+  }
+  @media screen and (min-width: 900px) {
+    flex-direction: row;
+  }
 `
 const ImageBox = styled.div`
   display: flex;
@@ -27,9 +32,14 @@ const ContentBox = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 0rem 2.5rem 2.5rem 0rem;
   justify-content: center;
   align-items: flex-start;
+  @media screen and (max-width: 900px) {
+    padding: 1rem 2.5rem 2.5rem 0rem;
+  }
+  @media screen and (min-width: 900px) {
+    padding: 0rem 2.5rem 2.5rem 0rem;
+  }
 `
 const Title = styled.h1`
   font-weight: 700;

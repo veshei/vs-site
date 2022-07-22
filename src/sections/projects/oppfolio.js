@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import Img from "gatsby-image"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 
 const OppenheimerContainer = styled.div`
   display: flex;
@@ -45,13 +45,6 @@ const Description = styled.span`
   line-height: 29px;
   width: ${(props) => (props.fit ? "fit-content" : "initial")};
 `
-const StyledLink = styled(Link)`
-  text-decoration: none;
-  &:hover {
-    text-decoration: underline;
-    text-decoration-color: var(--red-light);
-  }
-`
 
 const OppfolioProject = () => {
   const data = useStaticQuery(graphql`
@@ -75,9 +68,7 @@ const OppfolioProject = () => {
         />
       </ImageBox>
       <ContentBox>
-        <StyledLink to="/oppfolio">
-          <Title>OppFolio Project</Title>
-        </StyledLink>
+        <Title>OppFolio Project</Title>
         <Description>
           Built internal file drive system used by&nbsp;
           <Description highlight>2000+ members</Description>&nbsp;of the

@@ -12,8 +12,14 @@ const ImageContainer = styled.div`
 `
 
 const StyledImg = styled(Img)`
-  height: 75%;
-  width: 75%;
+  width: 100%;
+  object-position: top top;
+  @media screen and (max-width: 900px) {
+    height: auto;
+  }
+  @media screen and (min-width: 900px) {
+    height: 75%;
+  }
 `
 
 const ProfileImage = () => {

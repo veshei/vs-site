@@ -43,7 +43,7 @@ const DescriptionGrid = styled.div`
       "text";
   }
   @media screen and (min-width: 900px) {
-    grid-template-columns: 5fr 1fr 4fr;
+    grid-template-columns: 5fr 0.5fr 5fr;
     grid-template-rows: 1fr;
     grid-template-areas: "text gap image";
   }
@@ -54,6 +54,9 @@ const DescriptionContainer = styled.div`
   grid-area: text;
   display: flex;
   flex-direction: column;
+  @media screen and (max-width: 900px) {
+    padding-top: 1rem;
+  }
 `
 const Description = styled.span`
   color: ${(props) => (props.highlight ? "var(--red-light)" : "var(--grey)")};
