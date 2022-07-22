@@ -16,7 +16,7 @@ const AboutContainer = styled.div`
 const TitleContainer = styled.div`
   grid-area: title;
   display: grid;
-  grid-template-columns: 1fr 7fr;
+  grid-template-columns: 1.25fr 6.75fr;
   grid-template-rows: 1fr;
   grid-template-areas: "text divider";
   align-items: center;
@@ -35,11 +35,20 @@ const AboutDivider = styled.div`
 `
 
 const DescriptionGrid = styled.div`
+  @media screen and (max-width: 900px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 700px 1fr;
+    grid-template-areas:
+      "image"
+      "text";
+  }
+  @media screen and (min-width: 900px) {
+    grid-template-columns: 5fr 1fr 4fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "text gap image";
+  }
   grid-area: description;
   display: grid;
-  grid-template-columns: 5fr 1fr 4fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "text gap image";
 `
 const DescriptionContainer = styled.div`
   grid-area: text;
@@ -90,10 +99,11 @@ const About = () => {
             Hello! I&apos;m Veronica. I grew up in beautiful Honolulu and
             received my computer science and marketing degree from&nbsp;
             <Description highlight>Northeastern University</Description>
-            &nbsp;in 2019. I&apos;m currently working for&nbsp;
-            <Description highlight>Visa</Description>
-            &nbsp;as a software engineer on their cardholder application
-            development team.
+            &nbsp;in 2019. I&apos;m currently based in NYC and working for&nbsp;
+            <Description highlight>Sunnyside</Description>
+            &nbsp;as a growth software engineer. Sunnyside is an early stage
+            mission driven startup that is helping to build the future of the
+            mindful drinking movement.
             <br />
             <br />
             As an engineer, I always strive to follow the best coding practices,
@@ -102,21 +112,19 @@ const About = () => {
             <br />
             <br />
             My passion for computer science comes from the belief that
-            technology has tremendous potential to enact social good. I&apos;m
-            specifically interested in combating bias in machine learning
-            algorithms. This interest is why I am pursuing a&nbsp;
+            technology has tremendous potential to enact social good. This is
+            why I&apos;m interested in the&nbsp;
             <Description highlight>
-              Master of Science in Data Analytics
+              intersection between design and engineering
             </Description>
-            &nbsp;at&nbsp;
-            <Description highlight>Georgia Tech</Description>
-            &nbsp;(starting spring 2021!).
+            . I believe good design and good engineering lead to better products
+            that can better people&apos;s lives.
             <br />
             <br />
             In my downtime I love to try new recipes (my current obsession is
-            pasta making), travel and experience different cultures (all the
-            photos on my website are taken by me), and spend time with my loved
-            ones.
+            pasta making), go surfing, travel and experience different cultures
+            (all the photos on my website are taken by me), and spend time with
+            my loved ones.
             <br />
             <br />
           </Description>
@@ -128,11 +136,11 @@ const About = () => {
           <BulletPointRow>
             <BulletPointContainer first>
               <BulletPoint />
-              <BulletText>Javascript(ES6+)</BulletText>
+              <BulletText>Javascript (ES6+)</BulletText>
             </BulletPointContainer>
             <BulletPointContainer>
               <BulletPoint />
-              <BulletText>Java</BulletText>
+              <BulletText>NextJS (typescript)</BulletText>
             </BulletPointContainer>
           </BulletPointRow>
           <BulletPointRow>
@@ -142,7 +150,7 @@ const About = () => {
             </BulletPointContainer>
             <BulletPointContainer>
               <BulletPoint />
-              <BulletText>.NET Core</BulletText>
+              <BulletText>NestJS</BulletText>
             </BulletPointContainer>
           </BulletPointRow>
           <BulletPointRow>

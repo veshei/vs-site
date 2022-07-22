@@ -24,6 +24,7 @@ const WorkTitle = styled.h2`
   font-weight: 700;
   color: var(--red-dark);
   white-space: nowrap;
+  margin-right: 1rem;
 `
 
 const WorkDivider = styled.div`
