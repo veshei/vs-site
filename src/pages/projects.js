@@ -4,7 +4,6 @@ import styled from "styled-components"
 import { Layout } from "~components/"
 import OppenheimerSection from "~sections/projects/oppfolio"
 import SunnysideSection from "~sections/projects/sunnyside-rebrand"
-import SEO from "../components/seo"
 
 const MainContainer = styled.div`
   grid-area: main;
@@ -34,5 +33,3 @@ const ProjectsPage = () => {
 }
 
 export default ProjectsPage
-
-export const Head = () => <SEO title="Veronica Shei | Projects" />
